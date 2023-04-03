@@ -1,0 +1,75 @@
+.applySubSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    height: fit-content;
+    margin-top: 25px;
+    .applyCard{
+        width: 40%;
+        height: 660px;
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #172330;
+        border-radius: 25px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.35);
+        margin-bottom: 20px;
+        transition: .7s ease;
+        img{
+           height: 30%;
+        }
+        h3{
+            font-family: "MontserratSemiBold";
+            font-size: 26px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 28px;
+        }
+        a{
+            height: 50px;
+            width: 50%;
+            border: 3px solid #e74e4e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: .2s ease;
+            span{
+                color: #fff;
+                font-family: "MontserratSemiBold";
+                font-size: 18px;
+            }
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    @media screen and (max-width:1200px) {
+        flex-direction: column;
+        align-items: center;
+        .applyCard{
+            width: calc(100% - 80px);
+            max-width: 500px;
+            p{
+                font-size: 14px;
+                line-height: 23px;
+            }
+            h3{
+                font-family: "MontserratSemiBold";
+                font-size: 20px;
+            }
+            a{
+                min-width: fit-content;
+                span{
+                    font-size: 14px;
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.secondSection{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 150px;
+    .stickyContainer{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-bottom: 150px;
+        .stickyTitle{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            div{
+                position: sticky;
+                top: 0;
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            h2{
+                font-size: 150px;
+                height: 150px;
+                margin: 0;
+                background: linear-gradient(314.83deg,#3246ff 13.96%,#e74e4e 85%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+            span{
+                font-size: 25px;
+                font-family: var(--bold);
+                height: 25px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

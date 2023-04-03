@@ -1,0 +1,68 @@
+.visionSubSection{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .card{
+        width: calc(100% - 200px);
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #172330;
+        box-shadow: 0 15px 30px rgba(0,0,0,.35);
+        padding: 80px 100px;
+        border-radius: 25px;
+        margin: 25px 0;
+        transition: 1s ease;
+        .cardText{
+            width: 60%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            h3{
+                font-size: 30px;
+                margin-bottom: 20px;
+                font-family: "MontserratSemiBold";
+            }
+            p{
+                line-height: 40px;
+                font-size: 18px;
+            }
+        }
+        img{
+            width: 20%;
+        }
+    }
+    @media screen and (max-width:800px) {
+        .card{
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: center;
+            img{
+                width: 50%;
+            }
+            .cardText{
+                width: 100%;
+                align-items: center;
+                h3{
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+            &:nth-child(2){
+                flex-direction: column;
+            }
+        }
+    }
+}
